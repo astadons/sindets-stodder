@@ -1,81 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="stylesheet" href="css/infographic.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> TANKESTODDEREN </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="form-section">
+      <article id="form-info">
+        <h2>Register dig ind i systemet her</h2>
+        <p>Hvis du har lyst til at kunne få noget professinelt hjælp eller afklaringer så udfyld disse formularer felter
+          nedenfor og vi vil kontakte dig hurtigst muligt.
+        </p>
+      </article>
+      <form id="webform">
+        <fieldset>
+          <legend>Kontaktoplysninger</legend>
+          <label for="name">Name</label>
+          <input type="text" id="Name" name="name" placeholder="indsat dit navn" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="indsæt din email" required>
+          <label for="phone">Telefon</label>
+          <input type="phone" id="phone" name="phone" placeholder="indsæt dit nummer" required>
+          <label for="fødselsdato">Fødselsdato</label>
+          <input type="date" id="fødselsdato" name="fødselsdato" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Symptomer på din stodder</legend>
+          <label for="Symptomer">Beskriv dine Symptomer</label>
+          <textarea id="Symptomer" name="symptomer" placehlder="Beskriv dine symptomer her..." required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Skab ro for dig</legend>
+          <p>Har du prøvet at gøre følgende?</p>
+          <label>
+            <input type="radio" id="" name="løsninger" value="meditation"> Meditation
+          </label>
+
+          <label>
+            <input type="radio" id="spykolog" name="løsninger" value="spykolog"> Psykolog
+          </label>
+
+          <label>
+            <input type="radio" id="motion" name="løsninger" value="motion"> Motion
+          </label>
+
+          <label>
+            <input type="radio" id="læsning" name="løsninger" value="læsning"> Læsning
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Har du nogle at snakke med?</legend>
+          <p>Udfyld hvem du taler med og uddyb om det hjælper</p>
+
+          <label>
+            <input type="checkbox" id="familie" name="snakkemenneske" value="familie">
+          </label>
+          <label>
+            <input type="checkbox" id="venner" name="snakkemenneske" value="venner">
+          </label>
+          <label>
+            <input type="checkbox" id="spykolog" name="snakkemenneske" value="spykolog">
+          </label>
+          <label>
+            <input type="checkbox" id="kæreste" name="snakkemenneske" value="kæreste">
+          </label>
+          <label>
+            <input type="checkbox" id="chat" name="snakkemenneske" value="chat GPT">
+          </label>
+          <label>
+            <input type="checkbox" id="Ingen" name="snakkemenneske" value="Ingen hvorfor?">
+          </label>
+
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Stresset?</legend>
+          <p>indsæt dit stres niveau</p>
+          <input type="range" name="Stresset?" id="Stres" value="minimum til maksisimum" min="0" max="10">
+        </fieldset>
+
+        <fieldset>
+          <legend>Du er bedre end du tror</legend>
+          <p>Nævn dine bedste styrker</p>
+          <input type="textarea" id="styrker" name="styrker" placeholder="Dine styrker">
+
+        </fieldset>
+
+        <button type="send ind" id="send">send ind</button>
+      </form>
+    </section>
+    <section id="form-summary">
+      <h2>Opsummering</h2>
+      <article>
+        <p class="placeholder">Vælg med omtanke og hvad der føles rigtigt for dig!</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/form.js"></script>
+</body>
+
 </html>

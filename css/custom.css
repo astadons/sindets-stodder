@@ -1,34 +1,35 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: #6d0202; /* page background /*
 
   /* Header */
-  --color-head-bg: #ff4b00;
+  --color-head-bg: #6d0202;
 
   /* Logotype */
-  --color-logotype-bg: #000;
-  --color-text-logotype: #fffae2;
-  --font-logotype-size: 2.5rem;
+  --color-logotype-bg: #e33f3f;
+  --color-text-logotype: #ffffff;
+  --font-logotype-size: 4rem;
+  font-size: var(--color-headline-bg);
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #e33f3f;
   /* Links */
-  --color-link-bg: #78766e;
+  --color-link-bg: #000000;
   --color-link-hover: #fff; /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
-  --font-h1-size: 1rem;
+  --font-h1-size: 2rem;
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
-  --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
-  --color-headline-text-page: #42413d;
+  --font-h3-size: 2.5rem;
+  --color-headline-bg: #000000;
+  --color-headline-text-page: #f9f9f9;
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text: #ffffff;
+  --color-text-inverted: #ffffff;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,13 +38,13 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #8a8585;
-  --color-cta-card-bg: #d5d2d0;
+  --color-card-bg: #ba3232;
+  --color-cta-card-bg: #7b7d83;
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #787473;
-  --color-cta-newscard-bg-inverted: #7b7d83;
+  --color-news-bg: #f2f2f2;
+  --color-news-bg-inverted: #fafafa;
+  --color-cta-newscard-bg: #f4bb51;
+  --color-cta-newscard-bg-inverted: #f4bb51;
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -55,7 +56,7 @@
   /* Text sizes */
   --logotype-size: 1rem;
   --headline1-size: 2rem;
-  --headline2-size: 1rem;
+  --headline2-size: 1.5rem;
   --headline3-size: 1rem;
   --bodytext-size: 1rem;
   --cta-text-size: 1rem;
@@ -63,7 +64,7 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: #e33f3f;
+  --color-infobox-1-bg: #000000;
+  --color-infobox-2-bg: #000000;
 }
